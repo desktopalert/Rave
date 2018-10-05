@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : visix-axistv-setup.xml
+    Created on : 6/4/2013
+    Author     : mmchenry
+    Description:
+        Define the properties to be displayed in plugin setup for Visix AxisTV
+-->
+<propertySetup>
+    <propertyGroup id="rave"
+                   name="Rave Mobile Security">
+                   <!--listener="#{visixAxisTVCtrlr.onSetupChange}"-->
+        <property key="rave.disable"
+                  name="Disable Rave"
+                  type="BOOLEAN"
+                  description="Disable the Rave plugin"
+                  default="false"/>
+        <property key="rave.url"
+                  name="Rave Web Service URL"
+                  type="STRING"
+                  description="The url of the Rave Web Service."/> 
+        <property key="rave.username"
+                  name="Rave login Username"
+                  type="STRING"
+                  description="The username for authenticating to Rave."/> 
+        <property key="rave.password"
+                  name="Rave login Password"
+                  type="PASSWORD"
+                  description="The password for authenticating to Rave."/> 
+    </propertyGroup>
+</propertySetup>
